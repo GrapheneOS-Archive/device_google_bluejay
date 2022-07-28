@@ -68,6 +68,10 @@ $(call soong_config_set,lyric,camera_hardware,bluejay)
 $(call soong_config_set,lyric,tuning_product,bluejay)
 $(call soong_config_set,google3a_config,target_device,bluejay)
 
+# sysconfig XML from stock
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/product-sysconfig-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/product-sysconfig-stock.xml
+
 # Init files
 PRODUCT_COPY_FILES += \
 	device/google/bluejay/conf/init.blueport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.blueport.rc \
