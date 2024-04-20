@@ -316,3 +316,5 @@ PRODUCT_AVF_REMOTE_ATTESTATION_DISABLED := true
 # Bluejay: 0x4108
 PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.device_id.product_id=16648
+
+PRODUCT_VENDOR_PROPERTIES := $(filter-out ro.vendor.build.svn=% , $(PRODUCT_VENDOR_PROPERTIES))
