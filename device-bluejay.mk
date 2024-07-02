@@ -219,11 +219,21 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # GPS xml
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-	PRODUCT_COPY_FILES += \
-		device/google/bluejay/gps.xml.b3:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml
+    ifneq (,$(filter 6.1, $(TARGET_LINUX_KERNEL_VERSION)))
+        PRODUCT_COPY_FILES += \
+            device/google/bluejay/gps.6.1.xml.b3:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml
+    else
+        PRODUCT_COPY_FILES += \
+            device/google/bluejay/gps.xml.b3:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml
+    endif
 else
-	PRODUCT_COPY_FILES += \
-		device/google/bluejay/gps_user.xml.b3:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml
+    ifneq (,$(filter 6.1, $(TARGET_LINUX_KERNEL_VERSION)))
+        PRODUCT_COPY_FILES += \
+            device/google/bluejay/gps_user.6.1.xml.b3:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml
+    else
+        PRODUCT_COPY_FILES += \
+            device/google/bluejay/gps_user.xml.b3:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml
+    endif
 endif
 
 # This device is shipped with 32 (Android S V2)
