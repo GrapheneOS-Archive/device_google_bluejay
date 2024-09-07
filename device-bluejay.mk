@@ -309,5 +309,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_AVF_REMOTE_ATTESTATION_DISABLED := true
 
 # Bluetooth device id
+# Bluejay: 0x4108
 PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.device_id.product_id=20488
+    bluetooth.device_id.product_id=16648
