@@ -99,6 +99,7 @@
        EnableQzsAutoSwitch="false"
        EnableGloAutoSwitch="false"
        EnableNicAutoSwitch="true"
+       ConstellationAutoSwitchOffNavOnly="true"
   />
 
 </glgps>
