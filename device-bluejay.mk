@@ -36,7 +36,6 @@ include device/google/bluejay-sepolicy/bluejay-sepolicy.mk
 include device/google/bluejay/audio/bluejay/audio-tables.mk
 include device/google/gs101/device-shipping-common.mk
 include device/google/gs101/telephony/pktrouter.mk
-include hardware/google/pixel/vibrator/cs40l26/device.mk
 include device/google/gs-common/bcmbt/bluetooth.mk
 include device/google/gs-common/touch/stm/stm11.mk
 
@@ -110,6 +109,9 @@ PRODUCT_PACKAGES += \
 	Tag \
 	android.hardware.nfc-service.st \
 	NfcOverlayBluejay
+
+# modem_svc_sit daemon
+PRODUCT_PACKAGES += modem_svc_sit
 
 # SecureElement
 PRODUCT_PACKAGES += \
