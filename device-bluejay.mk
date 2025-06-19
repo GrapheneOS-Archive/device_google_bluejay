@@ -122,18 +122,6 @@ ifeq ($(RELEASE_IS_SMR), true)
     endif
 endif
 
-# Enable camera 1080P 60FPS binning mode
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.camera.1080P_60fps_binning=true
-
-# Enable camera exif model/make reporting
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.camera.exif_reveal_make_model=true
-
-# Disable rear light sensor probing explicitly
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.camera.rls_supported=false
-
 # Fingerprint antispoof property
 PRODUCT_PRODUCT_PROPERTIES +=\
     persist.vendor.fingerprint.disable.fake.override=none
