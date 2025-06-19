@@ -134,10 +134,6 @@ PRODUCT_PACKAGES += \
     SettingsOverlayGB62Z \
     SettingsOverlayGX7AS
 
-# Set support hide display cutout feature
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.support_hide_display_cutout=true
-
 # Set support one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true
