@@ -158,13 +158,6 @@ ACTUATOR_MODEL := legacy_zlra_actuator
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
-# Keyboard bottom padding in dp for portrait mode and height ratio
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.ime.kb_pad_port_b=6.4 \
-
-PRODUCT_PRODUCT_PROPERTIES ?= \
-    ro.com.google.ime.height_ratio=1.05
-
 # UFS: the script is used to select the corresponding firmware to run FFU.
 PRODUCT_PACKAGES += ufs_firmware_update.sh
 
