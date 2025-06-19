@@ -158,9 +158,6 @@ ACTUATOR_MODEL := legacy_zlra_actuator
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
-# UFS: the script is used to select the corresponding firmware to run FFU.
-PRODUCT_PACKAGES += ufs_firmware_update.sh
-
 # Enable DeviceAsWebcam support
 PRODUCT_VENDOR_PROPERTIES += \
     ro.usb.uvc.enabled=true
