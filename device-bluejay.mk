@@ -70,11 +70,6 @@ PRODUCT_COPY_FILES += \
 	device/google/bluejay/init.insmod.bluejay.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/init.insmod.bluejay.cfg
 endif
 
-# Display Config
-PRODUCT_COPY_FILES += \
-	device/google/bluejay/display_colordata_dev_cal0.pb:$(TARGET_COPY_OUT_VENDOR)/etc/display_colordata_dev_cal0.pb \
-	device/google/bluejay/display_golden_cal0.pb:$(TARGET_COPY_OUT_VENDOR)/etc/display_golden_cal0.pb
-
 # Media Performance Class 12
 PRODUCT_PROPERTY_OVERRIDES += ro.odm.build.media_performance_class=31
 
