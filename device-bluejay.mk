@@ -65,6 +65,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/google/gs101/conf/init.recovery.device.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.bluejay.rc
 
+# TODO: Remove this after boot is confirmed.
 # insmod files. Kernel 5.10 prebuilts don't provide these yet, so provide our
 # own copy if they're not in the prebuilts.
 # TODO(b/369686096): drop this when 5.10 is gone.
