@@ -122,9 +122,6 @@ ifeq ($(RELEASE_IS_SMR), true)
     endif
 endif
 
-# Config of primary display frames to reach LHBM peak brightness
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += vendor.primarydisplay.lhbm.frames_to_reach_peak_brightness=2
-
 # Bluetooth Tx power caps for bluejay
 PRODUCT_COPY_FILES += \
     device/google/bluejay/bluetooth_power_limits.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits.csv \
