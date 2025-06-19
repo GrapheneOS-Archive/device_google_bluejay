@@ -55,7 +55,6 @@ $(call soong_config_set,google3a_config,target_device,bluejay)
 
 # Init files
 PRODUCT_COPY_FILES += \
-	device/google/bluejay/conf/init.blueport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.blueport.rc \
 	device/google/bluejay/conf/init.bluejay.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.bluejay.rc
 
 # Recovery files
