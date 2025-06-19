@@ -122,11 +122,6 @@ ifeq ($(RELEASE_IS_SMR), true)
     endif
 endif
 
-# DCK properties based on target
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.gms.dck.eligible_wcc=2 \
-    ro.gms.dck.se_capability=1
-
 # Trusty liboemcrypto.so
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/bluejay/prebuilts
 
