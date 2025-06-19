@@ -127,10 +127,6 @@ PRODUCT_PACKAGES += \
     SettingsOverlayGB62Z \
     SettingsOverlayGX7AS
 
-# Set support one-handed mode
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.support_one_handed_mode=true
-
 # GPS xml
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
     ifneq (,$(filter 6.1, $(TARGET_LINUX_KERNEL_VERSION)))
