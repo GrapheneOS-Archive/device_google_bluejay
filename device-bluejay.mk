@@ -74,11 +74,6 @@ PRODUCT_COPY_FILES += \
 	device/google/bluejay/init.insmod.bluejay.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/init.insmod.bluejay.cfg
 endif
 
-# Thermal Config
-PRODUCT_COPY_FILES += \
-	device/google/bluejay/thermal_info_config_bluejay.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
-	device/google/bluejay/thermal_info_config_charge_bluejay.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_charge.json
-
 # Power HAL config
 PRODUCT_COPY_FILES += \
 	device/google/bluejay/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
