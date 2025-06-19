@@ -105,11 +105,6 @@ PRODUCT_COPY_FILES += \
 DEVICE_MANIFEST_FILE += \
 	device/google/bluejay/nfc/manifest_se_bluejay.xml
 
-# PowerStats HAL
-PRODUCT_SOONG_NAMESPACES += \
-    device/google/bluejay/powerstats/bluejay \
-    device/google/bluejay
-
 # Increment the SVN for any official public releases
 ifdef RELEASE_SVN_BLUEJAY
 TARGET_SVN ?= $(RELEASE_SVN_BLUEJAY)
