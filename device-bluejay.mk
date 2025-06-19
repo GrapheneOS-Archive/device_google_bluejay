@@ -115,25 +115,10 @@ else
 TARGET_SVN ?= 65
 endif
 
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.build.svn=$(TARGET_SVN)
-
-# Set device family property for SMR
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.device_family=O6R4B9
-
 # Set build properties for SMR builds
 ifeq ($(RELEASE_IS_SMR), true)
     ifneq (,$(RELEASE_BASE_OS_BLUEJAY))
         PRODUCT_BASE_OS := $(RELEASE_BASE_OS_BLUEJAY)
-    endif
-endif
-
-# Set build properties for EMR builds
-ifeq ($(RELEASE_IS_EMR), true)
-    ifneq (,$(RELEASE_BASE_OS_BLUEJAY))
-        PRODUCT_PROPERTY_OVERRIDES += \
-        ro.build.version.emergency_base_os=$(RELEASE_BASE_OS_BLUEJAY)
     endif
 endif
 
