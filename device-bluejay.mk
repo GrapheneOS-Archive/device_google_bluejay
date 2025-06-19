@@ -122,11 +122,6 @@ ifeq ($(RELEASE_IS_SMR), true)
     endif
 endif
 
-# Bluetooth Hal Extension test tools
-PRODUCT_PACKAGES_DEBUG += \
-    sar_test \
-    hci_inject
-
 # Config of primary display frames to reach LHBM peak brightness
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += vendor.primarydisplay.lhbm.frames_to_reach_peak_brightness=2
 
