@@ -74,9 +74,6 @@ PRODUCT_COPY_FILES += \
 	device/google/bluejay/init.insmod.bluejay.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/init.insmod.bluejay.cfg
 endif
 
-# Media Performance Class 12
-PRODUCT_PROPERTY_OVERRIDES += ro.odm.build.media_performance_class=31
-
 # NFC
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
