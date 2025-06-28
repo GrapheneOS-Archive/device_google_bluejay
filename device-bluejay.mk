@@ -29,8 +29,6 @@ $(call inherit-product-if-exists, vendor/google_devices/bluejay/proprietary/devi
 $(call inherit-product-if-exists, vendor/google_devices/bluejay/proprietary/bluejay/device-vendor-bluejay.mk)
 $(call inherit-product-if-exists, vendor/google_devices/bluejay/proprietary/WallpapersBluejay.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/google/bluejay/bluejay/overlay
-
 include device/google/bluejay-sepolicy/bluejay-sepolicy.mk
 include device/google/gs101/device-shipping-common.mk
 include device/google/gs101/telephony/pktrouter.mk
@@ -84,8 +82,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	$(RELEASE_PACKAGE_NFC_STACK) \
 	Tag \
-	android.hardware.nfc-service.st \
-	NfcOverlayBluejay
+	android.hardware.nfc-service.st
 
 # Shared Modem Platform
 SHARED_MODEM_PLATFORM_VENDOR := lassen
@@ -126,13 +123,6 @@ endif
 PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     AvoidAppsInCutoutOverlay
-
-# SKU specific RROs
-PRODUCT_PACKAGES += \
-    SettingsOverlayGB17L \
-    SettingsOverlayG1AZG \
-    SettingsOverlayGB62Z \
-    SettingsOverlayGX7AS
 
 # GPS xml
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
